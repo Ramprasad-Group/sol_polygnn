@@ -805,7 +805,7 @@ resolved_reference = "2994ca41ae0ceccc8485c5da418f8e9e8a1d66ff"
 
 [[package]]
 name = "sol-trainer"
-version = "0.1.0"
+version = "0.3.0"
 description = ""
 category = "main"
 optional = false
@@ -823,7 +823,7 @@ torchcontrib = "^0.0.2"
 type = "git"
 url = "ssh://git@github.com/rishigurnani/sol_trainer.git"
 reference = "main"
-resolved_reference = "25d03c915880d50772a3d0630d3b2c94e914d469"
+resolved_reference = "e0149d78c492aa3cb89aafb831c273a7d98f7813"
 
 [[package]]
 name = "stack-data"

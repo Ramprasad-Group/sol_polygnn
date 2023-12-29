@@ -1,0 +1,3 @@
+bad_solvent 0
+good_solvent 1
+medium_solvent 2
