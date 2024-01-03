@@ -1,9 +1,14 @@
+# In this file, we will use the ML model to predict if trichlorobenzene is a "bad_solvent"
+# "medium_solvent", or "good_solvent" for polyethylene.
+
 import pandas as pd
 import torch
 import sol_polygnn as sp
 import sol_trainer as st
 
-pe_smiles = "[*]CC[*]"  # the SMILES string for polyethylene
+# The SMILES string for the polymer we want to make predictions for. Polyethylene
+# in this case.
+pe_smiles = "[*]CC[*]"
 
 model_name = "solvent_class"
 root_dir = f"./trained_models/{model_name}"
@@ -75,7 +80,13 @@ def make_prediction(data):
 
 
 # Let's make predictions using the "solvent_class" model.
+
 properties = ["solvent_class"]
+
+# This is a one-hot dictionary, meaning all values should either be '0' or '1'. The keys
+# are the solvent names. The value corresponding to the solvent we want to predict with
+# (trichlorobenzene in this case) should be '1'. All other values should be '0'. Only
+# one solvent can be selected at a time (meaning there should only be a single '1' value).
 graph_feats = {
     "12-dichloroethane": 0,
     "acetic acid": 0,
@@ -141,6 +152,8 @@ graph_feats = {
 }
 
 print(f"Using model {model_name}.")
+
+# Assemble the input data into a Pandas DataFrame.
 data = pd.DataFrame(
     {
         "smiles_string": [pe_smiles] * len(properties),
@@ -148,7 +161,11 @@ data = pd.DataFrame(
         "graph_feats": [graph_feats],
     }
 )
+
+# Pass the data into the `make_prediction` function, which
+# will return the ML prediction.
 means, _ = make_prediction(data)
+
 print()
 print(
     f"trichlorobenzene is predicted to be a {class_labels[means[0]]} for polyethylene."
