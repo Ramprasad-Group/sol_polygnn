@@ -3,6 +3,8 @@
 *.out
 *.png
 
+!trained_models/solvent_class/metadata/features.pkl
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
