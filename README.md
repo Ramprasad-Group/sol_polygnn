@@ -21,7 +21,7 @@ This repository is currently set up to run on Linux machines with CUDA 10.2. Ple
 The file `example.py` contains example code that illustrates how to use the ML model to predict polymer-solvent compatibility. In particular, the model is used to predict if trichlorobenzene is a "bad_solvent", "medium_solvent", or "good_solvent" for polyethylene. To run the file, execute `poetry run python example.py`.
 
 ## Questions
-I'm more than happy to answer any questions about this codebase. If you encounter any troubles, please open a new Issue in the "Issues" tab and I will promptly respond. In addition, if you discover any bugs or have any suggestions to improve the codebase (documentation, features, etc.) please also open a new Issue. This is the power of open source!
+I ([@rishigurnani](https://github.com/rishigurnani)) am more than happy to answer any questions about this codebase. If you encounter any troubles, please open a new Issue in the "Issues" tab and I will promptly respond. In addition, if you discover any bugs or have any suggestions to improve the codebase (documentation, features, etc.) please also open a new Issue. This is the power of open source!
 
 ## License
 This repository is protected under a General Public Use License Agreement, the details of which can be found in `GT Open Source General Use License.pdf`.
