@@ -25,3 +25,6 @@ I ([@rishigurnani](https://github.com/rishigurnani)) am more than happy to answe
 
 ## License
 This repository is protected under a General Public Use License Agreement, the details of which can be found in `GT Open Source General Use License.pdf`.
+
+## Reproducibility
+The version of this codebase that was used in the companion paper is v0.3.0.
