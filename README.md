@@ -1,6 +1,6 @@
 # sol_polygnn
 
-This repository contains the training code and weights for a polymer-solvent ML model that will be presented in an upcoming paper.
+This repository contains the training code and weights for a polymer-solvent ML model presented in the companion paper, [AI-assisted discovery of high-temperature dielectrics for energy storage](https://www.nature.com/articles/s41467-024-50413-x).
 
 ## Installation
 This repository is currently set up to run on Linux machines with CUDA 10.2. Please raise a GitHub issue if you want to use this repo with a different configuration. Otherwise, follow these steps for installation:
