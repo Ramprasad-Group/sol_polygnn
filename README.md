@@ -1,5 +1,7 @@
 # sol_polygnn
 
+# IMPORTANT NOTE: The code and data shared here is available for academic non-commercial use only
+
 This repository contains the training code and weights for a polymer-solvent ML model presented in the companion paper, [AI-assisted discovery of high-temperature dielectrics for energy storage](https://www.nature.com/articles/s41467-024-50413-x).
 
 ## Installation
